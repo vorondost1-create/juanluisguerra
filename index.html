@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Finanzas Finas | Finanzas para negocios familiares y sucesión patrimonial</title>
+<meta name="description" content="Guías educativas sobre cómo separar las finanzas del hogar y del negocio familiar, y planificar la sucesión patrimonial sin conflictos.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://finanzasfinas.site/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Finanzas Finas">
+<meta property="og:title" content="Finanzas Finas | Finanzas para negocios familiares y sucesión patrimonial">
+<meta property="og:description" content="Guías educativas sobre cómo separar las finanzas del hogar y del negocio familiar, y planificar la sucesión patrimonial sin conflictos.">
+<meta property="og:url" content="https://finanzasfinas.site/">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='18' fill='%236B1E2B'/%3E%3Ctext x='50' y='68' font-size='58' fill='%23F5F0E8' text-anchor='middle' font-family='Georgia,serif'%3EF%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,500;0,600;1,400&family=Public+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          parchment: '#F5F0E8',
+          ink: '#241B18',
+          wine: '#6B1E2B',
+          winedeep: '#4E1520',
+          brass: '#B08D57',
+          brasslight: '#D9C6A0',
+          muted: '#8A7B6C',
+        },
+        fontFamily: {
+          display: ['Spectral', 'serif'],
+          body: ['Public Sans', 'sans-serif'],
+          mono: ['JetBrains Mono', 'monospace'],
+        },
+      }
+    }
+  }
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Finanzas Finas",
+  "url": "https://finanzasfinas.site",
+  "email": "soporte@finanzasfinas.site",
+  "founder": {
+    "@type": "Person",
+    "name": "Ana Balbina Aconcha de León"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Carrera 20, esquina con C. 16",
+    "addressLocality": "Barquisimeto",
+    "addressRegion": "Lara",
+    "addressCountry": "VE"
+  },
+  "telephone": "+584127383648"
+}
+</script>
+<style>
+  html { scroll-behavior: smooth; }
+  body { background-color: #F5F0E8; }
+  .overlay { display: none; }
+  .overlay.active { display: flex; }
+  .seal-line { stroke: #B08D57; stroke-width: 1.2; fill: none; }
+  ::selection { background-color: #D9C6A0; color: #241B18; }
+  .prose-article p { margin-bottom: 1.1rem; line-height: 1.8; }
+  .prose-article ul { margin: 0.5rem 0 1.2rem 1.25rem; list-style: disc; }
+  .prose-article li { margin-bottom: 0.4rem; line-height: 1.7; }
+  .prose-article h3 { margin-top: 2rem; margin-bottom: 0.75rem; }
+  @media (prefers-reduced-motion: reduce) {
+    * { animation: none !important; transition: none !important; }
+  }
+</style>
+</head>
+<body class="font-body text-ink antialiased">
+
+<!-- NAV -->
+<header class="sticky top-0 z-40 bg-parchment/90 backdrop-blur border-b border-brasslight">
+  <div class="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
+    <a href="#inicio" class="font-display text-xl tracking-tight text-wine">Finanzas Finas</a>
+    <nav class="hidden sm:flex items-center gap-6 text-sm font-medium text-ink/80">
+      <a href="#articulo" class="hover:text-wine transition-colors">Artículo</a>
+      <button onclick="openOverlay('overlay-contacto')" class="hover:text-wine transition-colors">Contacto</button>
+      <button onclick="openOverlay('overlay-aviso')" class="hover:text-wine transition-colors">Aviso legal</button>
+    </nav>
+    <button onclick="openOverlay('overlay-contacto')" class="sm:hidden text-sm font-medium text-wine">Contacto</button>
+  </div>
+</header>
+
+<!-- HERO -->
+<section id="inicio" class="relative overflow-hidden">
+  <div class="max-w-5xl mx-auto px-6 pt-16 pb-20 sm:pt-24 sm:pb-28 grid sm:grid-cols-[1fr_auto] gap-10 items-center">
+    <div>
+      <p class="font-mono text-xs uppercase tracking-[0.2em] text-brass mb-4">Negocio familiar · Sucesión patrimonial</p>
+      <h1 class="font-display text-4xl sm:text-5xl leading-tight text-ink mb-6">
+        Dos cuentas, una familia:<br>cómo separar el negocio del hogar
+      </h1>
+      <p class="text-lg text-ink/75 max-w-lg mb-8 leading-relaxed">
+        Guías educativas para ordenar las finanzas de tu negocio familiar y preparar, con tiempo, el traspaso a la siguiente generación.
+      </p>
+      <a href="#articulo" class="inline-flex items-center gap-2 bg-wine hover:bg-winedeep text-parchment px-6 py-3 rounded-sm font-medium transition-colors">
+        Leer el artículo
+        <span aria-hidden="true">→</span>
+      </a>
+    </div>
+    <div class="hidden sm:block" aria-hidden="true">
+      <svg width="180" height="180" viewBox="0 0 180 180" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="90" cy="90" r="70" class="seal-line" stroke-dasharray="3 4"/>
+        <circle cx="90" cy="90" r="52" class="seal-line"/>
+        <path d="M 60 95 L 82 115 L 122 65" class="seal-line" stroke="#6B1E2B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- ARTICLE PREVIEW / ENTRY -->
+<section id="articulo" class="max-w-5xl mx-auto px-6 pb-24">
+  <div class="border border-brasslight bg-white/40 rounded-sm p-8 sm:p-12">
+    <p class="font-mono text-xs uppercase tracking-[0.2em] text-muted mb-3">Artículo</p>
+    <h2 class="font-display text-2xl sm:text-3xl text-ink mb-4">
+      Negocio familiar, finanzas separadas: cómo evitar que la empresa y el hogar compartan la misma billetera
+    </h2>
+    <p class="text-ink/75 leading-relaxed mb-6">
+      En muchos negocios familiares, el dinero de la empresa y el dinero de la casa terminan mezclados en la misma cuenta. Con el tiempo, esa mezcla se convierte en una de las causas más comunes de conflictos entre socios y de tropiezos al momento de traspasar el negocio.
+    </p>
+    <button onclick="openOverlay('overlay-articulo')" class="inline-flex items-center gap-2 text-wine font-medium hover:text-winedeep transition-colors">
+      Leer artículo completo <span aria-hidden="true">→</span>
+    </button>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="border-t border-brasslight bg-white/40">
+  <div class="max-w-5xl mx-auto px-6 py-12 grid sm:grid-cols-3 gap-8 text-sm">
+    <div>
+      <p class="font-display text-lg text-wine mb-2">Finanzas Finas</p>
+      <p class="text-ink/70">Titular: Ana Balbina Aconcha de León</p>
+      <p class="text-ink/70 mt-2">Carrera 20, esquina con C. 16<br>Barquisimeto 3001, Lara, Venezuela</p>
+    </div>
+    <div>
+      <p class="font-medium text-ink mb-2">Contacto</p>
+      <p class="text-ink/70">Tel: +58 412-7383648</p>
+      <p class="text-ink/70">soporte@finanzasfinas.site</p>
+    </div>
+    <div>
+      <p class="font-medium text-ink mb-2">Legal</p>
+      <ul class="space-y-1 text-ink/70">
+        <li><button onclick="openOverlay('overlay-aviso')" class="hover:text-wine transition-colors">Aviso legal</button></li>
+        <li><button onclick="openOverlay('overlay-privacidad')" class="hover:text-wine transition-colors">Política de privacidad</button></li>
+        <li><button onclick="openOverlay('overlay-contacto')" class="hover:text-wine transition-colors">Contacto</button></li>
+      </ul>
+    </div>
+  </div>
+  <div class="border-t border-brasslight">
+    <p class="max-w-5xl mx-auto px-6 py-5 text-xs text-ink/60 leading-relaxed">
+      © 2026 Finanzas Finas. Todos los derechos reservados. El contenido de este sitio es exclusivamente educativo e informativo y no constituye asesoría financiera profesional.
+    </p>
+  </div>
+</footer>
+
+<!-- OVERLAY: ARTICULO COMPLETO -->
+<div id="overlay-articulo" class="overlay fixed inset-0 z-50 bg-ink/60 backdrop-blur-sm items-start justify-center p-4 sm:p-8 overflow-y-auto">
+  <div class="bg-parchment max-w-2xl w-full rounded-sm shadow-xl my-8">
+    <div class="flex items-center justify-between border-b border-brasslight px-6 sm:px-10 py-5 sticky top-0 bg-parchment">
+      <p class="font-mono text-xs uppercase tracking-[0.2em] text-muted">Artículo</p>
+      <button onclick="closeOverlay('overlay-articulo')" aria-label="Cerrar" class="text-ink/60 hover:text-wine text-2xl leading-none">&times;</button>
+    </div>
+    <div class="px-6 sm:px-10 py-8 prose-article">
+      <h1 class="font-display text-3xl text-ink mb-6">Negocio familiar, finanzas separadas: cómo evitar que la empresa y el hogar compartan la misma billetera</h1>
+
+      <p>En muchos negocios familiares, el dinero de la empresa y el dinero de la casa terminan mezclados en la misma cuenta, en el mismo bolsillo y, muchas veces, en la misma cabeza. Al principio parece práctico: "total, es todo de la familia". Pero con el tiempo esa mezcla se convierte en una de las causas más comunes de conflictos entre socios, de decisiones financieras confusas y de tropiezos cuando llega el momento de traspasar el negocio a la siguiente generación. En este artículo revisamos, de forma práctica, cómo empezar a separar ambas finanzas y cómo preparar un terreno más ordenado para una sucesión sin sobresaltos.</p>
+
+      <h3 class="font-display text-xl text-wine">1. Por qué separar las finanzas del hogar y del negocio</h3>
+      <p>Cuando los ingresos del negocio y los gastos personales se registran juntos, resulta difícil saber si la empresa realmente es rentable o si simplemente está "sobreviviendo" gracias a los ingresos personales de algún familiar. Algunas señales de que esta mezcla ya está generando problemas:</p>
+      <ul>
+        <li>No hay claridad sobre cuánto gana realmente el negocio cada mes.</li>
+        <li>Los gastos personales se pagan "de la caja" sin ningún registro.</li>
+        <li>Es difícil explicarle a un familiar nuevo cómo funciona el dinero de la empresa.</li>
+        <li>No existe un salario definido para quienes trabajan en el negocio.</li>
+      </ul>
+      <p>Separar las cuentas no es un signo de desconfianza familiar: es una herramienta de organización que protege tanto al negocio como a las relaciones entre quienes lo dirigen.</p>
+
+      <h3 class="font-display text-xl text-wine">2. Pasos prácticos para ordenar las cuentas</h3>
+      <p>Algunas acciones que suelen ayudar a poner orden, sin necesidad de estructuras complejas:</p>
+      <ul>
+        <li><strong>Abrir una cuenta bancaria exclusiva para el negocio</strong>, separada de las cuentas personales de cada familiar.</li>
+        <li><strong>Definir un salario o retiro fijo</strong> para quienes trabajan activamente en la empresa, en lugar de retirar dinero "cuando haga falta".</li>
+        <li><strong>Registrar cada ingreso y gasto</strong>, aunque sea en una hoja de cálculo sencilla, para tener una fotografía real de la salud financiera del negocio.</li>
+        <li><strong>Establecer un presupuesto mensual del negocio</strong>, separado del presupuesto del hogar.</li>
+        <li><strong>Revisar las cuentas en familia periódicamente</strong>, con información concreta y no solo de memoria.</li>
+      </ul>
+      <p>Ninguno de estos pasos exige contratar de inmediato un sistema contable costoso; se trata, ante todo, de generar el hábito de registrar y de separar.</p>
+
+      <h3 class="font-display text-xl text-wine">3. Preparar la sucesión: pensar en la siguiente generación desde ahora</h3>
+      <p>La sucesión patrimonial —es decir, el traspaso del negocio a la siguiente generación— suele planificarse tarde, cuando ya hay presión de tiempo o de salud. Algunas ideas para empezar a pensarla con anticipación:</p>
+      <ul>
+        <li><strong>Conversar abiertamente sobre expectativas</strong>: no todos los hijos o familiares necesariamente quieren o pueden asumir la dirección del negocio, y es mejor saberlo con tiempo.</li>
+        <li><strong>Documentar los procesos clave del negocio</strong>, para que no dependan únicamente del conocimiento de una sola persona.</li>
+        <li><strong>Definir roles y responsabilidades por escrito</strong>, incluso dentro de una empresa familiar pequeña.</li>
+        <li><strong>Buscar asesoría profesional especializada</strong> (contable, legal o notarial, según el país) cuando se acerque el momento de formalizar el traspaso de bienes o de la administración del negocio.</li>
+        <li><strong>Evitar decisiones apresuradas</strong> tomadas únicamente bajo presión emocional o de urgencia.</li>
+      </ul>
+      <p>Una sucesión ordenada no elimina por completo los desacuerdos familiares, pero reduce notablemente el riesgo de pérdidas económicas y de rupturas evitables.</p>
+
+      <h3 class="font-display text-xl text-wine">4. Errores comunes que conviene evitar</h3>
+      <ul>
+        <li>Postergar la conversación sobre el futuro del negocio "para más adelante".</li>
+        <li>No dejar nada por escrito, confiando todo a acuerdos verbales.</li>
+        <li>Repartir responsabilidades solo por antigüedad o por cercanía familiar, sin considerar capacidades reales.</li>
+        <li>Ignorar la opinión de quienes trabajan día a día en el negocio, aunque no sean los dueños formales.</li>
+      </ul>
+
+      <h3 class="font-display text-xl text-wine">Conclusión</h3>
+      <p>Separar las finanzas del hogar y del negocio, y comenzar a planificar la sucesión con tiempo, son procesos graduales que se construyen con hábitos simples y conversaciones honestas dentro de la familia. No existen fórmulas únicas ni resultados garantizados: cada negocio familiar tiene su propia historia y sus propios desafíos. Te invitamos a consultar siempre con un profesional calificado antes de tomar decisiones financieras o legales importantes.</p>
+
+      <p class="text-xs text-ink/50 border-t border-brasslight pt-4 mt-6">Este contenido es exclusivamente educativo e informativo y no constituye asesoría financiera, legal ni contable.</p>
+    </div>
+  </div>
+</div>
+
+<!-- OVERLAY: AVISO LEGAL -->
+<div id="overlay-aviso" class="overlay fixed inset-0 z-50 bg-ink/60 backdrop-blur-sm items-start justify-center p-4 sm:p-8 overflow-y-auto">
+  <div class="bg-parchment max-w-xl w-full rounded-sm shadow-xl my-8">
+    <div class="flex items-center justify-between border-b border-brasslight px-6 sm:px-10 py-5 sticky top-0 bg-parchment">
+      <p class="font-mono text-xs uppercase tracking-[0.2em] text-muted">Legal</p>
+      <button onclick="closeOverlay('overlay-aviso')" aria-label="Cerrar" class="text-ink/60 hover:text-wine text-2xl leading-none">&times;</button>
+    </div>
+    <div class="px-6 sm:px-10 py-8 prose-article">
+      <h2 class="font-display text-2xl text-ink mb-6">Aviso legal</h2>
+      <p>El contenido publicado en <strong>Finanzas Finas</strong> (finanzasfinas.site) tiene un propósito exclusivamente educativo e informativo. No constituye asesoría financiera, contable, legal ni profesional de ningún tipo, ni debe interpretarse como una recomendación de inversión, ahorro o decisión patrimonial específica. Cada situación financiera y familiar es distinta, por lo que recomendamos consultar con un profesional calificado (contador, abogado o asesor financiero) antes de tomar decisiones basadas en la información aquí publicada.</p>
+      <p>Este sitio es responsabilidad de <strong>Ana Balbina Aconcha de León</strong>, titular de <strong>Finanzas Finas</strong>. No garantizamos resultados económicos de ningún tipo derivados del uso de esta información.</p>
+    </div>
+  </div>
+</div>
+
+<!-- OVERLAY: PRIVACIDAD -->
+<div id="overlay-privacidad" class="overlay fixed inset-0 z-50 bg-ink/60 backdrop-blur-sm items-start justify-center p-4 sm:p-8 overflow-y-auto">
+  <div class="bg-parchment max-w-xl w-full rounded-sm shadow-xl my-8">
+    <div class="flex items-center justify-between border-b border-brasslight px-6 sm:px-10 py-5 sticky top-0 bg-parchment">
+      <p class="font-mono text-xs uppercase tracking-[0.2em] text-muted">Legal</p>
+      <button onclick="closeOverlay('overlay-privacidad')" aria-label="Cerrar" class="text-ink/60 hover:text-wine text-2xl leading-none">&times;</button>
+    </div>
+    <div class="px-6 sm:px-10 py-8 prose-article">
+      <h2 class="font-display text-2xl text-ink mb-6">Política de privacidad y términos de uso</h2>
+      <p>En <strong>Finanzas Finas</strong> respetamos la privacidad de quienes visitan este sitio.</p>
+      <p><strong>Datos personales:</strong> Si nos contactas a través del formulario o del correo de contacto, únicamente utilizaremos los datos proporcionados (como nombre y correo electrónico) para responder tu consulta. No compartimos, vendemos ni cedemos esta información a terceros con fines comerciales.</p>
+      <p><strong>Cookies:</strong> Este sitio puede utilizar cookies propias y de terceros (por ejemplo, para análisis de tráfico o publicidad) con el fin de mejorar la experiencia de navegación. Puedes gestionar o desactivar las cookies desde la configuración de tu navegador en cualquier momento.</p>
+      <p><strong>Enlaces externos:</strong> Este sitio puede incluir enlaces a páginas de terceros. No nos hacemos responsables del contenido, políticas de privacidad o prácticas de dichos sitios externos.</p>
+      <p><strong>Deslinde de responsabilidad:</strong> El contenido de este sitio es de carácter informativo y educativo, y no sustituye la asesoría profesional individualizada. El uso de la información publicada es responsabilidad exclusiva del usuario.</p>
+      <p>Para cualquier consulta relacionada con privacidad o protección de datos, puedes escribirnos a: <strong>soporte@finanzasfinas.site</strong></p>
+    </div>
+  </div>
+</div>
+
+<!-- OVERLAY: CONTACTO -->
+<div id="overlay-contacto" class="overlay fixed inset-0 z-50 bg-ink/60 backdrop-blur-sm items-start justify-center p-4 sm:p-8 overflow-y-auto">
+  <div class="bg-parchment max-w-lg w-full rounded-sm shadow-xl my-8">
+    <div class="flex items-center justify-between border-b border-brasslight px-6 sm:px-10 py-5 sticky top-0 bg-parchment">
+      <p class="font-mono text-xs uppercase tracking-[0.2em] text-muted">Contacto</p>
+      <button onclick="closeOverlay('overlay-contacto')" aria-label="Cerrar" class="text-ink/60 hover:text-wine text-2xl leading-none">&times;</button>
+    </div>
+    <div class="px-6 sm:px-10 py-8">
+      <h2 class="font-display text-2xl text-ink mb-2">Escríbenos</h2>
+      <p class="text-sm text-ink/60 mb-6">Nunca te pediremos contraseñas, datos bancarios ni información sensible por este formulario.</p>
+
+      <div id="contact-success" class="hidden mb-6 border border-brass bg-brasslight/30 text-ink/80 text-sm px-4 py-3 rounded-sm">
+        Gracias por tu mensaje. Te responderemos a la brevedad a través del correo indicado.
+      </div>
+      <div id="contact-error" class="hidden mb-6 border border-wine bg-wine/10 text-wine text-sm px-4 py-3 rounded-sm">
+        No pudimos enviar tu mensaje. Por favor escríbenos directamente a <strong>soporte@finanzasfinas.site</strong>.
+      </div>
+
+      <form id="contact-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field"
+        onsubmit="handleContactSubmit(event)" class="space-y-4" autocomplete="off">
+        <input type="hidden" name="form-name" value="contact">
+        <p class="hidden">
+          <label>No llenar este campo: <input name="bot-field" tabindex="-1" autocomplete="off"></label>
+        </p>
+        <div>
+          <label for="cf-nombre" class="block text-sm font-medium text-ink/80 mb-1">Nombre</label>
+          <input id="cf-nombre" name="nombre" type="text" required autocomplete="off"
+            class="w-full border border-brasslight bg-white/60 rounded-sm px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-wine">
+        </div>
+        <div>
+          <label for="cf-email" class="block text-sm font-medium text-ink/80 mb-1">Correo electrónico</label>
+          <input id="cf-email" name="email" type="email" required autocomplete="off"
+            class="w-full border border-brasslight bg-white/60 rounded-sm px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-wine">
+        </div>
+        <div>
+          <label for="cf-mensaje" class="block text-sm font-medium text-ink/80 mb-1">Mensaje</label>
+          <textarea id="cf-mensaje" name="mensaje" rows="4" required autocomplete="off"
+            class="w-full border border-brasslight bg-white/60 rounded-sm px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-wine"></textarea>
+        </div>
+        <button type="submit" id="cf-submit" class="w-full bg-wine hover:bg-winedeep text-parchment font-medium py-2.5 rounded-sm transition-colors disabled:opacity-60">
+          Enviar mensaje
+        </button>
+      </form>
+
+      <div class="mt-6 pt-6 border-t border-brasslight text-sm text-ink/70 space-y-1">
+        <p>Finanzas Finas</p>
+        <p>Ana Balbina Aconcha de León</p>
+        <p>Carrera 20, esquina con C. 16, Barquisimeto 3001, Lara, Venezuela</p>
+        <p>Tel: +58 412-7383648</p>
+        <p>soporte@finanzasfinas.site</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- COOKIE BANNER -->
+<div id="cookie-banner" class="fixed bottom-0 inset-x-0 z-50 hidden bg-ink text-parchment px-6 py-4">
+  <div class="max-w-5xl mx-auto flex flex-col sm:flex-row items-center gap-4 justify-between">
+    <p class="text-sm text-parchment/85">
+      Utilizamos cookies propias y de terceros para mejorar tu experiencia de navegación y analizar el uso del sitio. Al continuar navegando, aceptas su uso. Puedes conocer más en nuestra
+      <button onclick="openOverlay('overlay-privacidad')" class="underline hover:text-brasslight">Política de Privacidad</button>.
+    </p>
+    <div class="flex gap-3 shrink-0">
+      <button onclick="cookieChoice('rejected')" class="text-sm px-4 py-2 rounded-sm border border-parchment/40 hover:bg-parchment/10 transition-colors">Rechazar</button>
+      <button onclick="cookieChoice('accepted')" class="text-sm px-4 py-2 rounded-sm bg-brass hover:bg-brasslight hover:text-ink text-ink font-medium transition-colors">Aceptar</button>
+    </div>
+  </div>
+</div>
+
+<script>
+  function openOverlay(id) {
+    document.getElementById(id).classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeOverlay(id) {
+    document.getElementById(id).classList.remove('active');
+    document.body.style.overflow = '';
+  }
+  document.querySelectorAll('.overlay').forEach(function(ov) {
+    ov.addEventListener('click', function(e) {
+      if (e.target === ov) closeOverlay(ov.id);
+    });
+  });
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+      document.querySelectorAll('.overlay.active').forEach(function(ov) {
+        closeOverlay(ov.id);
+      });
+    }
+  });
+
+  function encodeFormData(form) {
+    return new URLSearchParams(new FormData(form)).toString();
+  }
+
+  function handleContactSubmit(e) {
+    e.preventDefault();
+    var form = document.getElementById('contact-form');
+    var submitBtn = document.getElementById('cf-submit');
+    var successBox = document.getElementById('contact-success');
+    var errorBox = document.getElementById('contact-error');
+
+    errorBox.classList.add('hidden');
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Enviando…';
+
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: encodeFormData(form)
+    })
+      .then(function (response) {
+        if (!response.ok) throw new Error('network');
+        form.classList.add('hidden');
+        successBox.classList.remove('hidden');
+      })
+      .catch(function () {
+        errorBox.classList.remove('hidden');
+        submitBtn.disabled = false;
+        submitBtn.textContent = 'Enviar mensaje';
+      });
+  }
+
+  function cookieChoice(choice) {
+    try { localStorage.setItem('ff_cookie_consent', choice); } catch (err) {}
+    document.getElementById('cookie-banner').classList.add('hidden');
+  }
+  (function initCookieBanner() {
+    var consent;
+    try { consent = localStorage.getItem('ff_cookie_consent'); } catch (err) { consent = null; }
+    if (!consent) {
+      document.getElementById('cookie-banner').classList.remove('hidden');
+    }
+  })();
+</script>
+
+</body>
+</html>
